@@ -31,7 +31,7 @@
 
 (filter odd? '(1 2 3 4 5 6 7 8))
 
-(define fill-this-in null)
+(define fill-this-in 'unimplemented)
 
 ;; (map-list f '(a b c d)) => ((f a) (f b) (f c))
 (define map-list
@@ -48,6 +48,6 @@
 
 ;; Homework puzzle -- you will probably need to define an additional function.
 (define map-list-2
-  (lambda (f lst) (fold-list (lambda (x y) fill-this-in) lst)))
+  (lambda (f lst) (fold-list (lambda (x y) fill-this-in) fill-this-in lst)))
 
 (map-list-2 (lambda (x) (+ 1 x)) '(1 2 3 4 5 6))
